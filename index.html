@@ -30,14 +30,21 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
   -->
-<!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
+  <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
   <div id="main">
-    Hello world!   <!-- You'll be deleting this line in the course -->
-
     <!--
     Everything from here to the <script> tag below is the skeleton of your
     website. Your code will add information to each of the sections of the
@@ -49,13 +56,19 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     </div>
     <div style="clear: both;"></div>
     <div id="workExperience" class="gray">
-      <h2>Work Experience</h2>
+      <h2 id="cursor">Work Experience</h2>
     </div>
     <div id="projects">
-      <h2>Projects</h2>
+      <h2 id="cursor">Projects</h2>
     </div>
     <div id="education" class="gray">
-      <h2>Education</h2>
+      <h2 id="cursor">Education</h2>
+    </div>
+    <div id="frontendWebProject">
+      <h2>Frontend Web Project</h2>
+      <div class="container">
+          <div class="row"></div>
+      </div>
     </div>
     <div id="mapDiv">
       <h2>Where I've Lived and Worked</h2>
@@ -134,8 +147,11 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     if(document.getElementsByClassName('project-entry').length === 0) {
       document.getElementById('projects').style.display = 'none';
     }
+    if(document.getElementsByClassName('frontendproject-entry').length === 0) {
+      document.getElementById('frontendWedProject').style.display = 'none';
+    }
     if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
+      document.getElementById("education").style.display = "none";
     }
     if(document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('lets-connect').style.display = 'none';

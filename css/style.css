@@ -20,7 +20,8 @@ h6 {
 
 .education-entry,
 .work-entry,
-.project-entry {
+.project-entry,
+.frontendproject-entry {
   padding: 0 5%;
 }
 
@@ -29,6 +30,19 @@ h1 {
   color: #f5a623;
   line-height: 48px;
   display: inline;
+}
+
+#name {
+    color: #f5a623;
+    font-weight: bold;
+}
+
+#role {
+    color: aliceblue;
+}
+
+#title {
+    color: cornflowerblue;
 }
 
 h2 {
@@ -163,6 +177,11 @@ ul {
   display: none;
 }
 
+.proj-img {
+  width: 150px;
+  height: 120px;
+}
+
 img {
   padding: 10px;
 }
@@ -173,6 +192,10 @@ span {
 
 #lets-connect {
   text-align: center;
+}
+
+#cursor {
+    cursor: pointer;
 }
 
 /* Media queries to handle various device widths */
@@ -208,7 +231,7 @@ span {
 }
 
 #mapDiv {
-  height: 400px;
+  height: 500px;
   width: 100%;
   padding-bottom: 5%;
 }
